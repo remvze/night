@@ -2,12 +2,16 @@
 import { Container } from './container';
 
 import { websites } from '@/data/websites';
+
+const reversedWebsites = [...websites];
+
+reversedWebsites.reverse();
 ---
 
 <Container>
   <section class="websites">
     {
-      websites.map(website => (
+      reversedWebsites.map(website => (
         <a class="website" href={website.url}>
           <div class="image-wrapper">
             <img
