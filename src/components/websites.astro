@@ -28,11 +28,14 @@ reversedWebsites.reverse();
         </a>
       ))
     }
+
+    <div class="overlay"></div>
   </section>
 </Container>
 
 <style>
   .websites {
+    position: relative;
     margin-top: 40px;
 
     & .website {
@@ -107,6 +110,13 @@ reversedWebsites.reverse();
           color: var(--color-foreground-subtler);
         }
       }
+    }
+
+    & .overlay {
+      position: sticky;
+      bottom: 0;
+      height: 100px;
+      background: linear-gradient(transparent, var(--color-neutral-50));
     }
   }
 </style>
