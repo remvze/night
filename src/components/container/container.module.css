@@ -6,4 +6,8 @@
   &.wide {
     max-width: 850px;
   }
+
+  &.fullwidth {
+    width: 100%;
+  }
 }
