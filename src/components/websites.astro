@@ -1,0 +1,76 @@
+---
+import { Container } from './container';
+
+import { websites } from '@/data/websites';
+---
+
+<Container>
+  <section class="websites">
+    {
+      websites.map(website => (
+        <a class="website" href={website.url}>
+          <div class="image-wrapper">
+            <img
+              alt={`${website.address} screenshot`}
+              src={website.screenshot}
+            />
+          </div>
+
+          <div class="detail">
+            <p class="name">{website.name}</p>
+            <p class="date">[{website.date.split('-').join('/')}]</p>
+          </div>
+        </a>
+      ))
+    }
+  </section>
+</Container>
+
+<style>
+  .websites {
+    margin-top: 40px;
+
+    & .website {
+      display: block;
+      text-decoration: none;
+
+      &:not(:last-of-type) {
+        margin-bottom: 28px;
+      }
+
+      & .image-wrapper {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--color-neutral-100);
+        border-radius: 20px;
+
+        & img {
+          display: block;
+          width: 100%;
+          aspect-ratio: 1920/1080;
+          border: 1px solid var(--color-neutral-200);
+          border-radius: 8px;
+        }
+      }
+
+      & .detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        font-size: var(--font-sm);
+
+        & .name {
+          font-weight: 500;
+          color: var(--color-foreground);
+        }
+
+        & .date {
+          font-family: var(--font-mono);
+          font-size: var(--font-xsm);
+          color: var(--color-foreground-subtler);
+        }
+      }
+    }
+  }
+</style>

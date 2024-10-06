@@ -16,7 +16,7 @@ import { Container } from './container';
 <style>
   .hero {
     position: relative;
-    padding: 160px 0 50px;
+    padding: 160px 0 40px;
     overflow: hidden;
     text-align: center;
 
@@ -25,9 +25,11 @@ import { Container } from './container';
       bottom: 0;
       left: 50%;
       z-index: -2;
+      box-sizing: content-box;
       width: 100%;
       min-width: 500px;
       aspect-ratio: 1/1;
+      border: 1px solid var(--color-neutral-100);
       border-radius: 50%;
       box-shadow: 0 -23px 40px rgb(255 255 255 / 5%);
       transform: translate(-50%, 50%);
@@ -37,16 +39,16 @@ import { Container } from './container';
       display: flex;
       justify-content: center;
       width: 48px;
-      padding: 8px 0;
+      padding: 8px 0 12px;
       margin: 0 auto 8px;
       background: linear-gradient(transparent, var(--color-neutral-100));
-      border-bottom: 1px solid var(--color-neutral-300);
-      border-radius: 0 0 16px 16px;
+      border-bottom: 2px solid var(--color-neutral-200);
+      border-radius: 0 0 160px 160px;
       opacity: 0.9;
 
       & img {
         display: block;
-        width: 28px;
+        width: 24px;
       }
     }
 

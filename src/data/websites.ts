@@ -5,54 +5,28 @@ export const websites: Array<{
   address: string;
   date: string;
   name: string;
+  screenshot: string;
   url: string;
 }> = [
   {
-    address: 'nazhamid.com',
+    address: 'evervault.com',
     date: '2024-09-30',
-    name: 'Naz Hamid',
-    url: 'https://nazhamid.com/',
+    name: 'Evervault',
+    screenshot: '/images/screenshots/evervault.com.webp',
+    url: 'https://evervault.com/',
   },
   {
-    address: '2dots.xyz',
+    address: 'dimension.dev',
     date: '2024-09-30',
-    name: '2dots',
-    url: 'https://www.2dots.xyz/',
+    name: 'Dimension',
+    screenshot: '/images/screenshots/dimension.dev.webp',
+    url: 'https://dimension.dev/',
   },
   {
-    address: 'tiagorangel.com',
+    address: 'blockwallet.io',
     date: '2024-09-30',
-    name: 'Tiago Rangel',
-    url: 'https://tiagorangel.com/',
-  },
-  {
-    address: 'andrewtarkan.webflow.io',
-    date: '2024-9-30',
-    name: 'Andrew Tarkan',
-    url: 'https://andrewtarkan.webflow.io/',
-  },
-  {
-    address: 'charliedeets.com',
-    date: '2024-9-30',
-    name: 'Charlie Deets',
-    url: 'https://charliedeets.com/',
-  },
-  {
-    address: 'denismoulin.com',
-    date: '2024-9-30',
-    name: 'Denis Moulin',
-    url: 'https://www.denismoulin.com/',
-  },
-  {
-    address: 'once.com',
-    date: '2024-9-30',
-    name: 'Once',
-    url: 'https://once.com/',
-  },
-  {
-    address: 'reaper.is',
-    date: '2024-9-30',
-    name: 'reaper',
-    url: 'https://reaper.is/',
+    name: 'BlockWallet',
+    screenshot: '/images/screenshots/blockwallet.io.webp',
+    url: 'https://blockwallet.io/',
   },
 ];
