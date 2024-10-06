@@ -4,6 +4,68 @@ import { Container } from './container';
 
 <Container>
   <section class="hero">
-    <h1>Hello World</h1>
+    <div class="circle"></div>
+    <div class="logo-wrapper">
+      <img alt="Night Logo" src="/logo.svg" />
+    </div>
+    <h1>Night</h1>
+    <p>Dark web design inspiration.</p>
   </section>
 </Container>
+
+<style>
+  .hero {
+    position: relative;
+    padding: 160px 0 50px;
+    overflow: hidden;
+    text-align: center;
+
+    & .circle {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      z-index: -2;
+      width: 100%;
+      min-width: 500px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      box-shadow: 0 -23px 40px rgb(255 255 255 / 5%);
+      transform: translate(-50%, 50%);
+    }
+
+    & .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 48px;
+      padding: 8px 0;
+      margin: 0 auto 8px;
+      background: linear-gradient(transparent, var(--color-neutral-100));
+      border-bottom: 1px solid var(--color-neutral-300);
+      border-radius: 0 0 16px 16px;
+      opacity: 0.9;
+
+      & img {
+        display: block;
+        width: 28px;
+      }
+    }
+
+    & h1 {
+      font-family: var(--font-display);
+      font-size: var(--font-2xlg);
+      font-weight: 600;
+      background: linear-gradient(
+        var(--color-foreground),
+        var(--color-neutral-300)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    & p {
+      margin-top: 4px;
+      font-size: var(--font-sm);
+      color: var(--color-foreground-subtle);
+    }
+  }
+</style>
