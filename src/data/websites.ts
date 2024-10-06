@@ -43,4 +43,25 @@ export const websites: Array<{
     screenshot: '/images/screenshots/reflect.app.webp',
     url: 'https://reflect.app/',
   },
+  {
+    address: 'twingate.com',
+    date: '2024-10-06',
+    name: 'Twingate',
+    screenshot: '/images/screenshots/twingate.com.webp',
+    url: 'https://twingate.com/',
+  },
+  {
+    address: 'codesandbox.io',
+    date: '2024-10-06',
+    name: 'CodeSandbox',
+    screenshot: '/images/screenshots/codesandbox.io.webp',
+    url: 'https://codesandbox.io/',
+  },
+  {
+    address: 'cwope.com',
+    date: '2024-10-06',
+    name: 'Wope',
+    screenshot: '/images/screenshots/wope.com.webp',
+    url: 'https://wope.com/',
+  },
 ];
