@@ -29,4 +29,18 @@ export const websites: Array<{
     screenshot: '/images/screenshots/blockwallet.io.webp',
     url: 'https://blockwallet.io/',
   },
+  {
+    address: 'resend.com',
+    date: '2024-10-06',
+    name: 'Resend',
+    screenshot: '/images/screenshots/resend.com.webp',
+    url: 'https://resend.com/',
+  },
+  {
+    address: 'reflect.app',
+    date: '2024-10-06',
+    name: 'Reflect',
+    screenshot: '/images/screenshots/reflect.app.webp',
+    url: 'https://reflect.app/',
+  },
 ];
