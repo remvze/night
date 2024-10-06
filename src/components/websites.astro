@@ -18,7 +18,6 @@ reversedWebsites.reverse();
               alt={`${website.address} screenshot`}
               src={website.screenshot}
             />
-            <div class="noise" />
           </div>
 
           <div class="detail">
@@ -71,16 +70,6 @@ reversedWebsites.reverse();
             transparent
           );
           transform: translateX(-50%);
-        }
-
-        & .noise {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: transparent url('/images/noise.png') repeat 0 0;
-          mix-blend-mode: overlay;
         }
 
         & img {
