@@ -1,0 +1,33 @@
+---
+import { Container } from './container';
+---
+
+<Container>
+  <footer class="footer">
+    <p>Curated by <a href="https://remvze.com/">Maze</a>.</p>
+    <p>Source code on <a href="https://github.com/remvze/night">GitHub</a>.</p>
+  </footer>
+</Container>
+
+<style>
+  .footer {
+    padding-bottom: 40px;
+    margin-top: 60px;
+    font-size: var(--font-sm);
+    text-align: center;
+
+    & p {
+      color: var(--color-foreground-subtler);
+
+      &:not(:last-of-type) {
+        margin-bottom: 4px;
+      }
+
+      & a {
+        font-weight: 500;
+        color: var(--color-foreground-subtle);
+        text-decoration: none;
+      }
+    }
+  }
+</style>
