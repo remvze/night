@@ -58,10 +58,31 @@ export const websites: Array<{
     url: 'https://codesandbox.io/',
   },
   {
-    address: 'cwope.com',
+    address: 'wope.com',
     date: '2024-10-06',
     name: 'Wope',
     screenshot: '/images/screenshots/wope.com.webp',
     url: 'https://wope.com/',
+  },
+  {
+    address: 'betterstack.com',
+    date: '2024-10-07',
+    name: 'Better Stack',
+    screenshot: '/images/screenshots/betterstack.com.webp',
+    url: 'https://betterstack.com',
+  },
+  {
+    address: 'frame.io',
+    date: '2024-10-07',
+    name: 'Frame',
+    screenshot: '/images/screenshots/frame.io.webp',
+    url: 'https://frame.io',
+  },
+  {
+    address: 'sellx.com',
+    date: '2024-10-07',
+    name: 'SellX',
+    screenshot: '/images/screenshots/sellx.com.webp',
+    url: 'https://sellx.com',
   },
 ];
